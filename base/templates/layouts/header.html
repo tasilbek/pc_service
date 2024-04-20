@@ -1,0 +1,174 @@
+{% load static %}
+
+
+<!-- Header Section Start -->
+<header class="header--section">
+  <!-- Header Topbar Start -->
+  <div class="header--topbar bg--color-dark">
+    <div class="container">
+      <!-- Header Topbar Links Start -->
+      <ul class="nav links float--left hidden-xxs">
+        <li><a href="#">Jismoniy shaxslar uchun</a></li>
+        <li><a href="#">Yuridik shaxslar uchun</a></li>
+      </ul>
+      <!-- Header Topbar Links End -->
+
+      <!-- Header Topbar Cart Start -->
+      <ul class="nav cart float--right">
+        <li>
+          <a href="cart.html"><i class="fa fa-shopping-basket"></i> 3</a>
+        </li>
+      </ul>
+      <!-- Header Topbar Cart End -->
+
+      <!-- Header Topbar Social Start -->
+      <ul class="nav social float--right">
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-rss"></i></a>
+        </li>
+      </ul>
+      <!-- Header Topbar Social End -->
+    </div>
+  </div>
+  <!-- Header Topbar End -->
+
+  <!-- Header Navbar Top Start -->
+  <div class="header--navbar-top">
+    <div class="container">
+      <!-- Logo Start -->
+      <div class="logo float--left">
+        <div class="vc--parent">
+          <div class="vc--child">
+            <a href="{% url 'home' %}"
+              ><img src="{% static 'img/logo_2.png' %}" alt="Quick Fix Logo" data-rjs="2"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Logo End -->
+
+      <div class="float--right">
+        <!-- Header Navbar Top Info Start -->
+        <div class="header--navbar-top-info float--left">
+          <div class="vc--parent">
+            <div class="vc--child">
+              <ul class="nav">
+                <li>
+                  <div class="icon text--primary">
+                    <i class="fa fa-vcard-o"></i>
+                  </div>
+                  <div class="content">
+                    <p><a href="tel:+055997766554412">+998997777777</a></p>
+                    <p>
+                      <a href="mailto:example@example.com"
+                        >example@example.com</a
+                      >
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon text--primary">
+                    <i class="fa fa-home"></i>
+                  </div>
+                  <div class="content">
+                    <p>114, free street,</p>
+                    <p>Dhaka, Bangladesh.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon text--primary">
+                    <i class="fa fa-clock-o"></i>
+                  </div>
+                  <div class="content">
+                    <p>Mon - Sat (09 am to 08 pm)</p>
+                    <p class="text--primary">(Sunday Closed)</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Header Navbar Top Info End -->
+
+        <!-- Header Navbar Top Button Start -->
+        <div class="header--navbar-top-btn float--left">
+          <div class="vc--parent">
+            <div class="vc--child">
+              <a href="index.html#appointment" class="btn btn-default"
+                >Make An Appoinment</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Header Navbar Top Button End -->
+      </div>
+    </div>
+  </div>
+  <!-- Header Navbar Top End -->
+
+  <!-- Header Navbar Start -->
+  <nav class="header--navbar navbar" data-trigger="sticky">
+    <div class="container">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#headerNav"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div id="headerNav" class="navbar-collapse collapse float--left">
+        <!-- Header Nav Links Start -->
+        <ul class="header--nav-links nav navbar-nav font--secondary">
+          <li class=""><a href="{% url 'home' %}">Bosh sahifa</a></li>
+          <li><a href="{% url 'about' %}">Biz haqimizda</a></li>
+          <li><a href="{% url 'pricing' %}">Narxlar</a></li>
+          <li><a href="{% url 'service' %}">Xizmatlar</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">Bog'lanish</a></li>
+        </ul>
+        <!-- Header Nav Links End -->
+      </div>
+
+      <!-- Header Navbar Search Start -->
+      <div class="header--nav-search dropdown float--right">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          ><i class="fa fa-search"></i
+        ></a>
+
+        <div class="dropdown-menu" data-form-validation="true">
+          <form action="#" method="get">
+            <input
+              type="search"
+              name="search"
+              placeholder="I’m Looking For..."
+              class="form-control"
+              required
+            />
+          </form>
+        </div>
+      </div>
+      <!-- Header Navbar Search End -->
+    </div>
+  </nav>
+  <!-- Header Navbar End -->
+</header>
+<!-- Header Section End -->

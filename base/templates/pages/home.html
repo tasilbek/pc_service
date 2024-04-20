@@ -1,0 +1,838 @@
+{% extends "base.html" %}
+{% load static %}
+{% block home %}
+
+<!-- Preloader Start -->
+<div class="preloader bg--color-theme"></div>
+<!-- Preloader End -->
+
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Banner Section Start -->
+    <div id="banner" class="banner--section pd--80-0">
+        <!-- Banner Slider Start -->
+        <div class="banner--slider owl-carousel" data-owl-dots="true">
+            <!-- Banner Item Start -->
+            <div class="banner--item" data-bg-img="{% static 'img/banner-img/slider-bg-01.jpg' %}">
+                <div class="vc--parent">
+                    <div class="vc--child">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Banner Content Start -->
+                                <div class="banner--content col-md-8">
+                                    <h1>We Help To Solution Your Favourite <strong>PC/Mobile Devices</strong></h1>
+
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majority have suffered alteration in some form, by injected humour, or
+                                        randomised words which don't look even slightly believable. If you are going
+                                        to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                                        embarrassing hidden.</p>
+
+                                    <a href="#" class="btn btn-default">Learn More</a>
+                                </div>
+                                <!-- Banner Content End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Item End -->
+
+            <!-- Banner Item Start -->
+            <div class="banner--item" data-bg-img="{% static 'img/banner-img/slider-bg-02.jpg' %}">
+                <div class="vc--parent">
+                    <div class="vc--child">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Banner Content Start -->
+                                <div class="banner--content col-md-8">
+                                    <h1>We Help To Solution Your Favourite <strong>PC/Mobile Devices</strong></h1>
+
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majori0ty have suffered alteration in some form, by injected humour, or
+                                        randomised words which don't look even slightly believable. If you are going
+                                        to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                                        embarrassing hidden.</p>
+
+                                    <a href="#" class="btn btn-default">Learn More</a>
+                                </div>
+                                <!-- Banner Content End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Item End -->
+
+            <!-- Banner Item Start -->
+            <div class="banner--item" data-bg-img="{% static 'img/banner-img/slider-bg-03.jpg' %}">
+                <div class="vc--parent">
+                    <div class="vc--child">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Banner Content Start -->
+                                <div class="banner--content col-md-8">
+                                    <h1>We Help To Solution Your Favourite <strong>PC/Mobile Devices</strong></h1>
+
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majority have suffered alteration in some form, by injected humour, or
+                                        randomised words which don't look even slightly believable. If you are going
+                                        to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                                        embarrassing hidden.</p>
+
+                                    <a href="#" class="btn btn-default">Learn More</a>
+                                </div>
+                                <!-- Banner Content End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Item End -->
+        </div>
+        <!-- Banner Slider End -->
+
+        <!-- Banner From Start -->
+        <div class="banner--form" data-form="ajax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-8">
+                        <form action="sendmail.php" method="post">
+                            <h2 class="h4 text-center">Get A Free Quote</h2>
+
+                            <div class="status"></div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="tel" name="tel" placeholder="Telephone" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="E-mail Address" class="form-control"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject" class="form-control"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quoteFile">
+                                    <span>Atach Photo</span>
+                                    <input type="file" name="file" class="form-control" id="quoteFile">
+                                    <span><i class="fa fa-paperclip"></i>Choose File</span>
+                                    <span class="file-status">File Name</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Problem In Details" class="form-control"
+                                    required></textarea>
+                            </div>
+
+                            <input type="hidden" name="submitType" value="ajax">
+
+                            <button type="submit" class="btn btn-default">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner From End -->
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Appointment Section Start -->
+    <div id="appointment" class="appointment--section pd--100-0-40">
+        <div class="container">
+            <div class="row row--vc">
+                <!-- Appointment Form Start -->
+                <div class="appointment--form col-md-4" data-form="ajax">
+                    <form action="sendmail.php" method="post">
+                        <input type="hidden" name="submitType" value="ajax">
+
+                        <h2 class="h4 text--primary text-center">Make An Appoinment</h2>
+
+                        <div class="status"></div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Your Name" class="form-control"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="tel" name="tel" placeholder="Telephone" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="E-mail Address"
+                                        class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" name="subject" placeholder="Subject" class="form-control"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="date" placeholder="Date" class="form-control"
+                                        data-trigger="date" required>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" name="time" placeholder="Time" class="form-control"
+                                        data-trigger="time" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Problem In Details" class="form-control"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Send Request</button>
+                    </form>
+                </div>
+                <!-- Appointment Form End -->
+
+                <!-- Appointment Items Start -->
+                <div class="appointment--items col-md-8">
+                    <div class="row AdjustRow">
+                        <div class="col-xs-6 col-xxs-12">
+                            <!-- Appointment Item Start -->
+                            <div class="appointment--item">
+                                <span class="step font--secondary">Step - 01</span>
+
+                                <div class="icon text--primary">
+                                    <img src="{% static 'img/appointment-img/icon-01.png' %}" alt="" data-rjs="2">
+                                </div>
+
+                                <div class="title">
+                                    <h2 class="h4">Capture Your Problem</h2>
+                                </div>
+
+                                <div class="content">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s.</p>
+                                </div>
+                            </div>
+                            <!-- Appointment Item End -->
+                        </div>
+
+                        <div class="col-xs-6 col-xxs-12">
+                            <!-- Appointment Item Start -->
+                            <div class="appointment--item">
+                                <span class="step font--secondary">Step - 02</span>
+
+                                <div class="icon text--primary">
+                                    <img src="{% static 'img/appointment-img/icon-02.png' %}" alt="" data-rjs="2">
+                                </div>
+
+                                <div class="title">
+                                    <h2 class="h4">Get A Quotes</h2>
+                                </div>
+
+                                <div class="content">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s.</p>
+                                </div>
+                            </div>
+                            <!-- Appointment Item End -->
+                        </div>
+
+                        <div class="col-xs-6 col-xxs-12">
+                            <!-- Appointment Item Start -->
+                            <div class="appointment--item">
+                                <span class="step font--secondary">Step - 03</span>
+
+                                <div class="icon text--primary">
+                                    <img src="{% static 'img/appointment-img/icon-03.png' %}" alt="" data-rjs="2">
+                                </div>
+
+                                <div class="title">
+                                    <h2 class="h4">Make An Appoinment</h2>
+                                </div>
+
+                                <div class="content">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s.</p>
+                                </div>
+                            </div>
+                            <!-- Appointment Item End -->
+                        </div>
+
+                        <div class="col-xs-6 col-xxs-12">
+                            <!-- Appointment Item Start -->
+                            <div class="appointment--item">
+                                <span class="step font--secondary">Step - 04</span>
+
+                                <div class="icon text--primary">
+                                    <img src="{% static 'img/appointment-img/icon-04.png' %}" alt="" data-rjs="2">
+                                </div>
+
+                                <div class="title">
+                                    <h2 class="h4">Delivery</h2>
+                                </div>
+
+                                <div class="content">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s.</p>
+                                </div>
+                            </div>
+                            <!-- Appointment Item End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Appointment Items End -->
+            </div>
+        </div>
+    </div>
+    <!-- Appointment Section End -->
+
+    <!-- Services Section Start -->
+    <div class="services--section pd--100-0 bg--color-lightgray">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section--title">
+                <h2 class="h2">Our Services</h2>
+
+                <p>What We Do</p>
+            </div>
+            <!-- Section Title End -->
+
+            <div class="row text-center">
+                <!-- Service Image Start -->
+                <div class="service--img col-md-4 col-sm-8">
+                    <div class="service--img-inner" data-bg-img="{% static 'img/services-img/service-img-bg.png' %}">
+                        <!-- Tab Content Start -->
+                        <div class="tab-content">
+                            <!-- Tab Pane Start -->
+                            <div class="tab-pane active" id="serviceImg01">
+                                <img src="{% static 'img/services-img/service-img-01.jpg' %}" alt="">
+                            </div>
+                            <!-- Tab Pane End -->
+
+                            <!-- Tab Pane Start -->
+                            <div class="tab-pane" id="serviceImg02">
+                                <img src="{% static 'img/services-img/service-img-02.jpg' %}" alt="">
+                            </div>
+                            <!-- Tab Pane End -->
+
+                            <!-- Tab Pane Start -->
+                            <div class="tab-pane" id="serviceImg03">
+                                <img src="{% static 'img/services-img/service-img-03.jpg' %}" alt="">
+                            </div>
+                            <!-- Tab Pane End -->
+
+                            <!-- Tab Pane Start -->
+                            <div class="tab-pane" id="serviceImg04">
+                                <img src="{% static 'img/services-img/service-img-04.jpg' %}" alt="">
+                            </div>
+                            <!-- Tab Pane End -->
+                        </div>
+                        <!-- Tab Content End -->
+                    </div>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Items Start -->
+                <div class="service--items col-md-4 col-sm-6 text-right">
+                    <!-- Service Item Start -->
+                    <div class="service--item active">
+                        <div class="dot" data-position-top="16px" data-position-right="-129px"></div>
+
+                        <h3 class="h3">
+                            <a href="#" data-toggle="tab" data-target="#serviceImg01">Computer Repair</a>
+                        </h3>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s.</p>
+
+                        <a href="service-details.html" class="btn btn-default">View Details</a>
+                    </div>
+                    <!-- Service Item End -->
+
+                    <!-- Service Item Start -->
+                    <div class="service--item">
+                        <div class="dot" data-position-top="13px" data-position-right="-54px"></div>
+
+                        <h3 class="h3">
+                            <a href="#" data-toggle="tab" data-target="#serviceImg02">Tablet Repair</a>
+                        </h3>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s.</p>
+
+                        <a href="service-details.html" class="btn btn-default">View Details</a>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+                <!-- Service Items End -->
+
+                <!-- Service Items Start -->
+                <div class="service--items col-md-4 col-sm-6 float--right">
+                    <!-- Service Item Start -->
+                    <div class="service--item">
+                        <div class="dot" data-position-top="16px" data-position-left="-129px"></div>
+
+                        <h3 class="h3">
+                            <a href="#" data-toggle="tab" data-target="#serviceImg03">Laptop Repair</a>
+                        </h3>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s.</p>
+
+                        <a href="service-details.html" class="btn btn-default">View Details</a>
+                    </div>
+                    <!-- Service Item End -->
+
+                    <!-- Service Item Start -->
+                    <div class="service--item">
+                        <div class="dot" data-position-top="13px" data-position-left="-54px"></div>
+
+                        <h3 class="h3">
+                            <a href="#" data-toggle="tab" data-target="#serviceImg04">Mobile Repair</a>
+                        </h3>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s.</p>
+
+                        <a href="service-details.html" class="btn btn-default">View Details</a>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+                <!-- Service Items End -->
+            </div>
+
+            <!-- Section Footer Start -->
+            <div class="section--footer text-center">
+                <a href="services.html" class="btn btn-default">View All Services</a>
+            </div>
+            <!-- Section Footer End -->
+        </div>
+    </div>
+    <!-- Services Section End -->
+
+    <!-- Gallery Section Start -->
+    <div class="gallery--section pd--100-0">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section--title">
+                <h2 class="h2">Projects From Gallery</h2>
+
+                <p>Checkout Our Portfolio</p>
+            </div>
+            <!-- Section Title End -->
+
+            <!-- Gallery Filter Nav Start -->
+            <div class="gallery--filter-nav font--secondary text-center">
+                <ul class="nav">
+                    <li class="active" data-target="*">All Items</li>
+                    <li data-target="computer">Computer</li>
+                    <li data-target="laptop">Laptop</li>
+                    <li data-target="tablet">Tablet</li>
+                    <li data-target="mobile">Mobile</li>
+                    <li data-target="other">Others Servecies</li>
+                </ul>
+            </div>
+            <!-- Gallery Filter Nav End -->
+
+            <!-- Gallery Items Start -->
+            <div class="gallery--items row">
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile laptop">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-01.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Hard Disk Servecing</h3>
+
+                                    <p>Catagory : Computer Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-01.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other tablet">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-02.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Laptop Servecing</h3>
+
+                                    <p>Catagory : Laptop Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-02.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer mobile">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-03.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Tablet Servecing</h3>
+
+                                    <p>Catagory : Tablet Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-03.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="mobile laptop other">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-04.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Mobile Servecing</h3>
+
+                                    <p>Catagory : Mobile Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-04.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="other tablet">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-05.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Laptop Servecing</h3>
+
+                                    <p>Catagory : Laptop Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-05.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-06.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Other Servecing</h3>
+
+                                    <p>Catagory : Other Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-06.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-07.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Motherboard Servecing</h3>
+
+                                    <p>Catagory : Computer Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-07.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+
+                <!-- Gallery Item Start -->
+                <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer">
+                    <div class="gallery--img">
+                        <img src="{% static 'img/gallery-img/gallery-item-08.jpg' %}" alt="" data-rjs="2">
+
+                        <div class="gallery--info bg--overlay">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <h3 class="h4">Other Servecing</h3>
+
+                                    <p>Catagory : Other Repair</p>
+
+                                    <div class="btn-groups">
+                                        <a href="gallery-details.html" class="btn btn-default"><i
+                                                class="fa fa-chain"></i></a>
+                                        <a href="{% static 'img/gallery-img/gallery-item-08.jpg' %}" class="btn btn-default"
+                                            data-popup="img"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item End -->
+            </div>
+            <!-- Gallery Items End -->
+
+            <!-- Section Footer Start -->
+            <div class="section--footer text-center mt--30">
+                <a href="gallery.html" class="btn btn-default">See More<i
+                        class="fa flm fa-angle-double-right"></i></a>
+            </div>
+            <!-- Section Footer End -->
+        </div>
+    </div>
+    <!-- Gallery Section End -->
+
+    <!-- Pricing Section Start -->
+    <div class="pricing--section pd--100-0-40 bg--color-lightgray">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section--title">
+                <h2 class="h2">Our Pricing Package</h2>
+
+                <p>Here Is Our Pricing Plan</p>
+            </div>
+            <!-- Section Title End -->
+
+            <div class="row AdjustRow">
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing--item">
+                        <div class="pricing--icon">
+                            <img src="{% static 'img/pricing-img/icon-01.png' %}" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="pricing--title">
+                            <h3 class="h4">Desktop Repair</h3>
+                        </div>
+
+                        <div class="pricing--price">
+                            <p>Satarting at ...</p>
+
+                            <h4 class="h2">$25.00</h4>
+                        </div>
+
+                        <div class="pricing--features">
+                            <ul class="nav">
+                                <li>Service Cost Depends on Your</li>
+                                <li>Device Problem</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing--footer">
+                            <a href="pricing.html" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing--item">
+                        <div class="pricing--icon">
+                            <img src="{% static 'img/pricing-img/icon-02.png' %}" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="pricing--title">
+                            <h3 class="h4">iPad/Tablet Repair</h3>
+                        </div>
+
+                        <div class="pricing--price">
+                            <p>Satarting at ...</p>
+
+                            <h4 class="h2">$30.00</h4>
+                        </div>
+
+                        <div class="pricing--features">
+                            <ul class="nav">
+                                <li>Service Cost Depends on Your</li>
+                                <li>Device Problem</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing--footer">
+                            <a href="pricing.html" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing--item">
+                        <div class="pricing--icon">
+                            <img src="{% static 'img/pricing-img/icon-03.png' %}" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="pricing--title">
+                            <h3 class="h4">Laptop Repair</h3>
+                        </div>
+
+                        <div class="pricing--price">
+                            <p>Satarting at ...</p>
+
+                            <h4 class="h2">$40.00</h4>
+                        </div>
+
+                        <div class="pricing--features">
+                            <ul class="nav">
+                                <li>Service Cost Depends on Your</li>
+                                <li>Device Problem</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing--footer">
+                            <a href="pricing.html" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+
+                <div class="col-md-3 col-xs-6 col-xxs-12">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing--item">
+                        <div class="pricing--icon">
+                            <img src="{% static 'img/pricing-img/icon-04.png' %}" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="pricing--title">
+                            <h3 class="h4">Mobile Repair</h3>
+                        </div>
+
+                        <div class="pricing--price">
+                            <p>Satarting at ...</p>
+
+                            <h4 class="h2">$10.00</h4>
+                        </div>
+
+                        <div class="pricing--features">
+                            <ul class="nav">
+                                <li>Service Cost Depends on Your</li>
+                                <li>Device Problem</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                                <li>Lorem Ipsum Dummy Text</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing--footer">
+                            <a href="pricing.html" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Section End -->
+
+    <!-- Back To Top Button Start -->
+    <div class="back-to-top-btn">
+        <a href="#" class="btn btn-default active"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
+</div>
+<!-- Wrapper End -->
+
+{% endblock home %}

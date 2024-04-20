@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% for post in posts %}
+    {% if post.image %}
+        <img src="{{post.image.url}}" alt="">
+    {% endif %}
+        <h3>{{post.title}}</h3>
+        <div class="small">
+            <small>{{post.author}}</small>
+            <small>{{post.created_on}}</small>
+            <small>04 Comments</small>
+        </div>
+        <p>
+            {{post.body | slice:"100"}}
+        </p>
+{% endfor %}
+
+{% endblock content %}
